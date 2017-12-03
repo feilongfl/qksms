@@ -1,7 +1,12 @@
 package com.moez.QKSMS.common.formatter;
 
 public class FormatterFactory {
-    private static final Formatter[] FORMATTERS = {new NumberToContactFormatter(),new FeiLongSMSFormat()};
+    private static final Formatter[] FORMATTERS = {
+            new NumberToContactFormatter(),
+            new FeiLongSMSFormat(),
+//            new GarbageSMSFormat(),
+            new VerificationSMSFormat()
+    };
 
     public static String format(String text) {
         for (Formatter formatter : FORMATTERS) {
