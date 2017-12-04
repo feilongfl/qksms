@@ -1,3 +1,19 @@
+
+# QKSMS —— 飞龙自用版本
+## 这是一个个人使用的短信应用！如果您需要原始的QKSMS请不要跟踪本仓库！
+
+# 增加功能
+1. 适配短信排版
+1. 验证码消息简化
+1. 详情页查看信息原文
+
+# 截图
+1. 短信自动格式化
+![](./Screen/1.jpg)
+1. 详情页面查看原文
+![](./Screen/2.jpg)
+
+# 以下为原作者说明
 Disclaimer: The current condition of the codebase is quite poor *(I guess that's what happens when you start writing an app when you don't even know how to code yet)*. I'm in the process of rebuilding the app from scratch using Kotlin - I would recommend against making any pull requests until the new version is ready. ETA October 2017
 
 # QKSMS
@@ -31,7 +47,7 @@ If you'd like to donate to help support the project, you can donate via [PayPal 
 
 ### Translations
 
-Please do not perform translations directly on the source files. Pull requests for translations will not be accepted. If you would like to do translations for QKSMS, join the translation project on Crowdin: https://crowdin.com/project/qksms. 
+Please do not perform translations directly on the source files. Pull requests for translations will not be accepted. If you would like to do translations for QKSMS, join the translation project on Crowdin: https://crowdin.com/project/qksms.
 
 Unfortunately I don't always have time to check notifications on Crowdin. If you'd like something checked or approved, send me a message on Slack and then I'll take a look
 
@@ -94,7 +110,7 @@ The conversation isn't marked as read.
 ```
 
 #### Helping reproduce bugs
-Reproducing a bug is important, since if we can't reproduce an issue then it's hard to figure out what's going wrong, and we can't know that we've fixed it. 
+Reproducing a bug is important, since if we can't reproduce an issue then it's hard to figure out what's going wrong, and we can't know that we've fixed it.
 
 You can see bugs which need "repro steps" [here](https://github.com/moezbhatti/qksms/issues?q=is%3Aopen+is%3Aissue+label%3Aneeds-repro). If you see any bugs that you know how to reproduce (see above for example repro steps), then make a comment with the steps and we'll track the bug down!
 
