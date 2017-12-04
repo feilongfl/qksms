@@ -127,7 +127,7 @@ public class FeiLongSMSFormat implements Formatter {
                             "账号：$1\n" +
                             "金额：$3\n" +
                             "账单时间：$2\n" +
-                            "还款时间：$4\n"
+                            "还款时间：$4"
             }
     };
 }

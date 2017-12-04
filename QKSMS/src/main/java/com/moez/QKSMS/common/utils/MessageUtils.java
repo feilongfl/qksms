@@ -766,6 +766,11 @@ public abstract class MessageUtils {
             }
         }
 
+        // Message Text.
+        details.append("\n\n");
+        details.append(res.getString(R.string.message_text_label));
+        details.append(cursor.getString(MessageColumns.COLUMN_SMS_BODY));
+
         // Error code: ***
         int errorCode = cursor.getInt(MessageColumns.COLUMN_SMS_ERROR_CODE);
         if (errorCode != 0) {

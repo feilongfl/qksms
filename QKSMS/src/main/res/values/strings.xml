@@ -10,6 +10,11 @@
     <string name="loading">Loading…</string>
     <!--Test string-->
     <string name="test">Test string</string>
+    
+    <!--feilong add-->
+    <!-- -->
+    <string name="message_text_label">SMS:\u000A</string>
+    <!--feilong add end-->
 
     <!--Hint for contacts text field-->
     <string name="hint_contacts">Enter recipients</string>
