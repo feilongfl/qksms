@@ -13,6 +13,11 @@
 1. 详情页面查看原文  
 ![](./Screen/2.jpg)
 
+# 关于修改版交流问题
+~~fork过来的仓库不知道为什么没有issues~~  
+打开issues了,可以直接提交，你也可以在[这里](https://cauc.pw/topic/55/%E5%9F%BA%E4%BA%8Eqksms%E5%AE%9A%E5%88%B6%E7%9A%84%E7%9F%AD%E4%BF%A1%E5%BA%94%E7%94%A8)讨论。
+
+
 # 以下为原作者说明
 Disclaimer: The current condition of the codebase is quite poor *(I guess that's what happens when you start writing an app when you don't even know how to code yet)*. I'm in the process of rebuilding the app from scratch using Kotlin - I would recommend against making any pull requests until the new version is ready. ETA October 2017
 
