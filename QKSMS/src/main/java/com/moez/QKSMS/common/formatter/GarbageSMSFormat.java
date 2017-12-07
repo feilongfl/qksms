@@ -34,7 +34,7 @@ public class GarbageSMSFormat implements Formatter {
 
     private String RegexStr[][] = {
         {
-            ".*回复?[Tt][Dd]?退[订定].*",
+            ".*回复?\\*w+退[订定].*",
             "",
             "垃圾短信"
         },
