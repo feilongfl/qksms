@@ -175,6 +175,8 @@
   <string name="pref_blocked_conversations_summary">Long-press on a conversation and block to move to blocked inbox and stop notifications</string>
   <string name="pref_block_future">Block future messages</string>
   <string name="pref_block_future_summary">Add additional phone numbers to block</string>
+  <string name="pref_block_regex">拦截正则</string>
+  <string name="pref_block_regex_summary">使用正则表达式拦截信息</string>
   <string name="pref_should_i_answer">Should I Answer? Integration</string>
   <string name="pref_should_i_answer_summary">Automatically delete incoming messages from numbers which are blocked through Should I Answer?</string>
   <string name="pref_mobile_only">手机号码</string>

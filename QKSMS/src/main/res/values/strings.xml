@@ -187,6 +187,8 @@
     <string name="pref_blocked_conversations_summary">Long-press on a conversation and block to move to blocked inbox and stop notifications</string>
     <string name="pref_block_future">Block future messages</string>
     <string name="pref_block_future_summary">Add additional phone numbers to block</string>
+    <string name="pref_block_regex">Block messages with Regex</string>
+    <string name="pref_block_regex_summary">Block messages with regex.</string>
     <string name="pref_should_i_answer">Should I Answer? Integration</string>
     <string name="pref_should_i_answer_summary">Automatically delete incoming messages from numbers which are blocked through Should I Answer?</string>
     <string name="pref_mobile_only">Mobile numbers</string>

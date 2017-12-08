@@ -129,6 +129,13 @@
             android:layout="@layout/list_item_preference"
             android:summary="@string/pref_block_future_summary"
             android:title="@string/pref_block_future" />
+        <Preference
+            android:defaultValue="false"
+            android:dependency="pref_key_blocked_enabled"
+            android:key="pref_key_block_regex"
+            android:layout="@layout/list_item_preference"
+            android:summary="@string/pref_block_regex_summary"
+            android:title="@string/pref_block_regex" />
         <CheckBoxPreference
             android:defaultValue="false"
             android:key="pref_key_should_i_answer"
