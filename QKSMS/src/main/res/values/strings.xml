@@ -327,7 +327,9 @@
     <string name="title_donate">Donate</string>
     <string name="title_qk_responses">QK Responses</string>
     <string name="title_block_address">Block number</string>
+    <string name="title_block_regex">Block regex</string>
     <string name="title_unblock_address">Unblock number</string>
+    <string name="title_unblock_regex">Unblock regex</string>
     <string name="title_conversations_selected">%s selected</string>
     <string name="title_palette">Palette</string>
     <string name="title_rgb">RGB</string>

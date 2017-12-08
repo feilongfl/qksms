@@ -304,7 +304,9 @@
   <string name="title_donate">捐赠</string>
   <string name="title_qk_responses">快捷回应</string>
   <string name="title_block_address">拦截号码</string>
+  <string name="title_block_regex">拦截正则</string>
   <string name="title_unblock_address">解除拦截号码</string>
+  <string name="title_unblock_regex">解除拦截正则</string>
   <string name="title_conversations_selected">已选择 %s</string>
   <string name="title_palette">Palette</string>
   <string name="title_rgb">RGB</string>
