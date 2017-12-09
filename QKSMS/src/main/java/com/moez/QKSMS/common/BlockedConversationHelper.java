@@ -71,15 +71,15 @@ public class BlockedConversationHelper {
         return prefs.getStringSet(SettingsFragment.BLOCKED_FUTURE, new HashSet<String>());
     }
 
-    public static void blockRegexConversation(SharedPreferences prefs, String address) {
+    public static void blockRegexConversation(SharedPreferences prefs, String body) {
         Set<String> idStrings = prefs.getStringSet(SettingsFragment.BLOCKED_REGEXS, new HashSet<String>());
-        idStrings.add(address);
+        idStrings.add(body);
         prefs.edit().putStringSet(SettingsFragment.BLOCKED_REGEXS, idStrings).apply();
     }
 
-    public static void unblockRegexConversation(SharedPreferences prefs, String address) {
+    public static void unblockRegexConversation(SharedPreferences prefs, String body) {
         Set<String> idStrings2 = prefs.getStringSet(SettingsFragment.BLOCKED_REGEXS, new HashSet<String>());
-        idStrings2.remove(address);
+        idStrings2.remove(body);
         prefs.edit().putStringSet(SettingsFragment.BLOCKED_REGEXS, idStrings2).apply();
     }
 
@@ -97,9 +97,9 @@ public class BlockedConversationHelper {
         return false;
     }
 
-    public static boolean isRegexBlocked(SharedPreferences prefs, String address) {
-        for (String s : getFutureBlockedConversations(prefs)) {
-            if (PhoneNumberUtils.compareLoosely(s, address)) {
+    public static boolean isRegexBlocked(SharedPreferences prefs, String body) {
+        for (String s : getRegexBlockedConversations(prefs)) {
+            if (body.matches(s)) {
                 return true;
             }
         }

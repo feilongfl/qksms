@@ -111,7 +111,7 @@ public class MessagingReceiver extends BroadcastReceiver {
             BlockedConversationHelper.FutureBlockedConversationObservable.getInstance().futureBlockedConversationReceived();
 
             // block sms with body regex
-        } else if (BlockedConversationHelper.isFutureBlocked(mPrefs, mBody)){
+        } else if (BlockedConversationHelper.isRegexBlocked(mPrefs, mBody)){
             BlockedConversationHelper.unblockRegexConversation(mPrefs, mBody);
             BlockedConversationHelper.blockConversation(mPrefs, message.getThreadId());
             message.markSeen();
