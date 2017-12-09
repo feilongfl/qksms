@@ -97,6 +97,16 @@ public class BlockedConversationHelper {
         return false;
     }
 
+    public static boolean isRegexBlocked(SharedPreferences prefs, String address) {
+        for (String s : getFutureBlockedConversations(prefs)) {
+            if (PhoneNumberUtils.compareLoosely(s, address)) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     public static String[] getBlockedConversationArray(SharedPreferences prefs) {
         Set<String> idStrings = getBlockedConversations(prefs);
         return idStrings.toArray(new String[idStrings.size()]);
@@ -195,6 +205,21 @@ public class BlockedConversationHelper {
         }
 
         public void futureBlockedConversationReceived() {
+            synchronized (this) {
+                setChanged();
+                notifyObservers();
+            }
+        }
+    }
+
+    public static class RegexBlockedConversationObservable extends Observable {
+        private static RegexBlockedConversationObservable sInstance = new RegexBlockedConversationObservable();
+
+        public static RegexBlockedConversationObservable getInstance() {
+            return sInstance;
+        }
+
+        public void regexBlockedConversationReceived() {
             synchronized (this) {
                 setChanged();
                 notifyObservers();
